@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Задачки</title>
+
+    <style>mjx-container{text-align: left;}
+    .border tr td{
+        border: 1px solid #000;
+        text-align: center;
+    }
+    .border{
+        border: 1px solid #000;
+        
+    }
+    body{
+        margin-left: 15px ;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5FyATQO3vyTO7zSvOyNhHiZ-IZb7WdVF4XlmzZdI5mtwZPuAT&usqp=CAU);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    button{
+        border-radius: 8px;
+        font-size: 14px;
+        background-color:#555555;
+        color: white
+   }
+    </style>
+    
+</head>
+<body>    
+    
+    <div>
+        <h1>Площадь параллелограмма</h1>
+        <p><strong><big>\( S = a * h, a-сторона,h- высота\)</strong></p>
+        Введите а : <input class="storona_1"/><br><br>
+        Введите h : <input class="storona_2"/><br>
+        <button class="bt_1">Посчитать</button>
+       
+        <p id="otvet">Ответ: </p>
+    </div>      
+    
+    <div >
+        <h1>Нахождения cosx, по формуле</h1>
+        <p>\(cosx=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+...+(-1)^n\frac{x^{2n}}{2n!}\)</p>
+        Введите n : <input class="key"><br><br>
+        Введите x : <input class="key_2"><br>
+        <button class="bt_2">Посчитать</button>
+        <p id="otvet_2">Ответ: </p>
+    </div>
+
+    <div>
+        <h1>Задача с матрицей</h1>
+        <p><em>Условие </em>: Задана матрица В(8,8). Поменять местами элементы столбца, содержащего большее число положительных элементов, и элементы главной диагонали.
+        </p>
+        <button class="bt_bf" >Создать матрицу</button>
+        <table class="table"></table>
+        
+        <br>
+        <button class="bt_af">Поменять матрицу</button>
+        <table class="table2"></table>
+        <p class="before"></p>
+        <p class="after"></p>
+    </div>
+
+    <div>
+        <h1>Задание 4.4 (Функции)</h1>
+        Введите n = <input id="n"><br>
+        <button id="bt_3" onclick=creatmas()>Построить</button>
+        <table id="table"></table>
+    </div>
+
+    <script src="./Assets/script1.js"></script>
+    <script src="./Assets/script2.js"></script>
+    <script src="./Assets/script3.js"></script>
+    <script src="./Assets/script4.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
