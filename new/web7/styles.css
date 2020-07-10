@@ -28,4 +28,33 @@ body
 {
 	font-size: 24px;
 	color: white;
+	margin-top: 20px;
+	line-height: 2;
+}
+
+p
+{
+	margin: 0;
+	padding: 0;
+}
+
+.keyShoot
+{
+	position: absolute;
+	margin-left: 15px;
+}
+
+.keyRight
+{
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 65px;
+	
+}
+
+.keyLeft
+{
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 15px;
 }
