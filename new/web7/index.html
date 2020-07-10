@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Space shoteer</title>
+		<script src="script.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script>
+
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body onLoad="newGame();">
+		<div class="key">
+			Управление: <br> 
+			Стрелять - стрелочка вверх. <br>
+			Движение - стрелочка влево, вправо.
+		</div>
+		<div class="parent">
+			<div class="inner">
+				<canvas id="canvas" width="800" height="600">
+				</canvas>
+				<form>
+					<input type="button" value="Level +" onclick="lvlplus()">
+					<input type="button" value="Stop" onclick="stop()">
+					<input type="button" value="Resume" onclick="resume()">
+					<input type="button" value="Name" onclick="newGamer()">
+					<input type="button" value="Table" onclick="displayTable()">
+				</form>
+				<table>
+					<tr>
+						<td>
+							<div id="top">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
